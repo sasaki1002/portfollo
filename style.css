@@ -1,0 +1,342 @@
+/* PC、スマホ共通スタイル */
+body {
+  font-family: "Lato", "Microsoft Sans Serif";
+}
+
+p {
+  font-size: 15px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px;
+}
+
+#nav-pc {
+  display: flex;
+  column-gap: 50px;
+}
+
+.first {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.second {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.third {
+  padding-top: 80px;
+  text-align: center;
+}
+
+#aisatu {
+  text-align: center;
+  background-color: #ECEAEB;
+  width: 100%;
+}
+
+.pekori {
+  width: 50%;
+}
+
+.index-h1 {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+#flex {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: baseline;
+}
+
+.ab {
+  text-align: center;
+  padding-top: 90px;
+  font-size: 40px;
+  
+}
+
+.abb {
+  display: inline-flex;
+  padding-top: 40px;
+}
+
+.ac {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.acc {
+  padding: 100px 0;
+}
+
+.index-h2 {
+  text-align: center;
+  font-size: 50px;
+  padding: 100px;
+}
+
+.sakuhin {
+  display: flex;
+  flex-direction: column;
+  /* コンテナ全体を縦方向に配置 */
+  align-items: center;
+  /* コンテナ内の行を中央に配置 */
+  gap: 20px;
+  /* 行間のスペース */
+}
+
+.top {
+  display: flex;
+  /* 各行をFlexboxコンテナにする */
+  justify-content: center;
+  /* 行内の画像を中央に配置 */
+  gap: 220px;
+  /* 画像間のスペース */
+  width: 100%;
+  /* 親要素いっぱいに広げる */
+}
+
+.central {
+  padding-top: 280px;
+  padding-bottom: 280px;
+}
+
+.under {
+  display: flex;
+  /* 各行をFlexboxコンテナにする */
+  justify-content: center;
+  /* 行内の画像を中央に配置 */
+  gap: 220px;
+  /* 画像間のスペース */
+  width: 100%;
+  /* 親要素いっぱいに広げる */
+  padding-bottom: 300px;
+}
+
+.kizi-top {
+  display: flex;
+  /* 各行をFlexboxコンテナにする */
+  justify-content: center;
+  /* 行内の画像を中央に配置 */
+  gap: 220px;
+  /* 画像間のスペース */
+  width: 100%;
+  /* 親要素いっぱいに広げる */
+  padding-bottom: 50px;
+}
+
+.kizi-mozi {
+  text-align: center;
+}
+
+.title {
+  font-size: x-large;
+}
+
+.kizi-under {
+  display: flex;
+  /* 各行をFlexboxコンテナにする */
+  justify-content: center;
+  /* 行内の画像を中央に配置 */
+  gap: 220px;
+  /* 画像間のスペース */
+  width: 100%;
+  /* 親要素いっぱいに広げる */
+  padding-bottom: 300px;
+}
+
+
+/*お問い合わせ*/
+#otoia {
+  margin: 80px 20px 80px 20px;
+  text-align: center;
+}
+
+#otoia>h1 {
+  margin-bottom: 50px;
+}
+
+#otoia>form>div {
+  margin-bottom: 30px;
+}
+
+.otoia-heading {
+  margin-bottom: 30px;
+}
+
+/*ラベル*/
+.otoia-label {
+  font-weight: bold;
+}
+
+.otoia-textbox {
+  height: 50px;
+  background-color: #D9D9D9;
+  min-width: 300px;
+  width: 30%;
+}
+
+.otoia-textarea {
+  height: 200px;
+  background-color: #D9D9D9;
+  width: 50%;
+}
+
+.radiobutton {
+  margin-bottom: 10px;
+  appearance: auto;
+}
+
+.radiobutton+label::after {
+  white-space: pre;
+}
+
+
+.kotoba {
+  padding: 100px;
+  font-size: x-large;
+  text-align: center;
+}
+
+#footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px;
+}
+
+.copy {
+  text-align: right;
+  padding-right: 20px;
+}
+
+
+/*=========================
+スマートフォン用のスタイル
+==========================*/
+@media screen and (max-width: 768px){
+
+ body {
+    min-width: 375px;
+    margin: 0;
+  }
+
+header {
+flex-flow: column;
+padding: 0;
+}
+
+.first {
+  padding-top:0;
+}
+
+.second {
+  padding-top: 0;
+}
+
+.third {
+  padding-top: 0;
+}
+
+#nav-pc a {
+  width: 50%;
+  text-align: center;
+  border: 1px solid #969696 ;
+  padding: 10px;
+}
+
+.aaa {
+  line-height: 40px;
+}
+
+#nav-pc {
+flex-wrap: wrap;
+column-gap: 0;
+border: 1px solid #969696;
+width: 100%;
+}
+
+.pekori{
+ width: 100%;
+ height: 600px;
+}
+
+#flex{
+  flex-flow: column;
+  align-items: center;
+}
+
+
+.top{
+  display: contents;
+}
+
+.central {
+ padding-top: 50px;
+padding-bottom: 50px;
+}
+
+.under {
+  display: contents;
+}
+
+.top img {
+  width: 100%;
+  padding-top: 50px;
+padding-bottom: 50px;
+}
+
+.central img {
+width: 100%;
+}
+.under img {
+  width: 100%;
+  padding-top: 50px;
+padding-bottom: 50px;
+}
+
+.kizi{
+  text-align: center;
+}
+
+.kizi-top {
+ display: contents;
+}
+
+.kizi-mozi {
+  text-align: center;
+}
+
+.title {
+  font-size: x-large;
+}
+
+.kizi-under {
+  display: contents;
+}
+
+.index-h1,.index-h2 {
+  font-size: x-large;
+}
+
+.otoia-textarea {
+  width: 100%;
+}
+
+
+#footer-link {
+flex-flow: column;
+padding: 0;
+}
+
+}
