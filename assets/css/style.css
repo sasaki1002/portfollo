@@ -49,7 +49,6 @@ header {
   font-size: 50px;
   padding-top: 100px;
   padding-bottom: 80px;
-  color: aqua;
 }
 
 #flex {
@@ -125,6 +124,10 @@ header {
 .central {
   padding-top: 280px;
   padding-bottom: 280px;
+  width: 50%;
+}
+.central img{
+  width: 100%;
 }
 
 .under {
