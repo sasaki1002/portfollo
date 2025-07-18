@@ -128,13 +128,13 @@
           <!--お問い合わせ-->
           <section id="otoia">
             <h1 class="index-h2">お問い合わせ</h1>
-            <form>
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfFi728DCMcgpiQ-LAcIaISFe0prgbh6h-jdmmUybf-NPGZyw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
               <div>
                 <div class="otoia-heading">
                   <label class="otoia-label">氏名・法人名（担当者様お名前）</label>
                 </div>
                 <div>
-                  <input type="text" name="name" placeholder="入力してください" class="otoia-textbox">
+                  <input name="entry.436856965" class="otoia-textbox" placeholder="入力してください" type="text" required="required"/>
                 </div>
               </div>
               <div>
@@ -142,7 +142,7 @@
                   <label class="otoia-label">メールアドレス</label>
                 </div>
                 <div>
-                  <input type="text" name="name" placeholder="入力してください" class="otoia-textbox">
+                  <input name="entry.252435650" class="otoia-textbox" placeholder="入力してください" type="text" required="required"/>
                 </div>
               </div>
               <div>
@@ -150,7 +150,7 @@
                   <label class="otoia-label">電話番号</label>
                 </div>
                 <div>
-                  <input type="text" name="name" placeholder="入力してください" class="otoia-textbox">
+                 <input name="entry.1049166239" class="otoia-textbox" placeholder="入力してください" type="text" required="required"/>
                 </div>
               </div>
               <div>
@@ -158,7 +158,7 @@
                   <label class="otoia-label">お問い合わせ内容/私にお願いしてくれること</label>
                 </div>
                 <div>
-                  <textarea class="otoia-textarea" placeholder="入力してください" name="お問い合わせ"></textarea>
+                  <textarea name="entry.937726944" class="otoia-textarea" placeholder="入力してください" name="お問い合わせ"></textarea>
                 </div>
               </div>
               <div>
@@ -166,9 +166,9 @@
                   <label class="otoia-label">ご希望のご連絡先</label>
                 </div>
                 <div>
-                  <input class="radiobutton" type="radio" value="tel" name="otoia" checked><label>お電話</label>
-                  <input class="radiobutton" type="radio" value="mall" name="otoia"><label>メール</label>
-                  <input class="radiobutton" type="radio" value="both" name="otoia"><label>どちらでも</label>
+                  <input class="radiobutton" type="radio" value="お電話" name="entry.982901768"><label>お電話</label>
+                   <input class="radiobutton" type="radio" value="メール" name="entry.982901768"><label>メール</label>
+                   <input class="radiobutton" type="radio" value="どちらでも" name="entry.982901768"><label>どちらでも</label>
                 </div>
                 <p class="kotoba">深く感謝を申し上げます。</p>
                 <!-- ロボットではありません -->
@@ -192,6 +192,15 @@
     </footer>
      <p class="copy">©2025 ts</p>
   </main>
+  <script type="text/javascript">
+    let submitted = false;
+</script>
+<iframe
+    name="hidden_iframe"
+    id="hidden_iframe"
+    style="display: none"
+    onload="if(submitted){window.location='/thanks.html';}"
+></iframe>
 </body>
 
 </html>
